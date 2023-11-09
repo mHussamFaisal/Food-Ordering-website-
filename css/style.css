@@ -1,0 +1,215 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* navbar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+#navbar::before{
+   content: '';
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+/* navbar:logo */
+#logo{
+    margin: 12px 15px;
+}
+#logo img{
+     border-radius: 100px;
+    height:60px;
+}
+/* navbar:list */
+#navbar ul{
+    display: flex;
+    font-family:  cursive;
+}
+#navbar ul li{
+    list-style: none;
+}
+#navbar ul li a{
+    color: white;
+    padding: 5px 24px;
+    text-decoration: none;
+    display: block;
+    border-radius: 20px;
+}
+#navbar ul li a:hover{
+    
+    color: black;
+    background-color: white;
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 478px;
+    padding: 5px 90px;
+    font-family: 'Bree Serif', serif;
+
+}
+#home::before{
+    content: '';
+    background:url('../images/bks/bk1.jpg')no-repeat center center;
+    background-size: cover;
+    height: 502px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    /* height: 100%; */
+    z-index: -1;
+    opacity: 0.85;
+    
+}
+#home h1{
+    color: white;
+    text-align: center;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: bree;
+}
+.btn:hover{ 
+    background-color: rgb(6, 83, 67);
+    color: rgb(241, 185, 79);
+    transform: scale(1.5);
+}
+
+/* service section  */
+#services-section{
+    /* margin: 5px; */
+    margin-top: 10px;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+.box {
+    border: 2px solid red;
+    border-radius: 15px;
+    margin: 2px 25px;
+    padding: 30px;
+    max-width: 860px;
+}
+#services .box img{
+    height: 140px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif; 
+}
+/* Client Section */
+#client-section{
+    height: 250px;
+    position: relative;
+
+}
+#client-section::before{
+    content: "";
+ position: absolute;
+ background: url('../images/bks/bk3.jpg') no-repeat center center/cover;
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.client-item{
+    padding: 44px;
+}
+#client img {
+    height: 114px;
+    padding: 15px 35px;
+}
+/* contect-section */
+#contact{
+    padding-top: 34px;
+    position: relative;
+}
+#contact::before{
+        content: "";
+    position: absolute;
+    background: url('../images/bks/bk4.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+/* #form-items{
+    border-radius: 9px;
+    background-color: red;
+
+} */
+/* footer */
+footer{
+    background-color: black;
+    color: white;
+}
+/* utility classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.1rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid  white;
+    background-color: rgb(241, 185, 79);
+    border-radius: 10px;
+    color: rgb(6, 83, 67);
+    margin: 18px;
+    cursor: pointer;
+    font-family:  cursive;
+    font-weight: bold;
+    transition: all 1.25s ease;
+}
+.center{
+    text-align: center;
+}
+.h-secondary{
+    font-size: 1.8rem;
+   padding: 25px 5px;
+   margin: 5px;
+   font-family: 'Bree Serif', serif;
+
+    /* color: white; */
+}
+
+
